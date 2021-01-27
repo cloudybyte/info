@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group 'org.example'
+group 'net.cloudybyte'
 version '1.0-SNAPSHOT'
 
 repositories {
@@ -12,7 +12,10 @@ repositories {
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    implementation files('lib/javakarol.jar')
+    compile 'org.jetbrains:annotations:16.0.2'
 }
+
 
 test {
     useJUnitPlatform()
